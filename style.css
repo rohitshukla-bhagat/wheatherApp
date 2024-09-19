@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.video-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  object-fit: cover;
+}
+.mainContainer {
+  position: absolute;
+  margin-top: 4em;
+  width: 35em;
+  height: 35em;
+  border: 0.1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 220, 0.468);
+  color: black;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px 0px black;
+  font-family: "Karla", sans-serif;
+}
+.input {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+  border-radius: 1em;
+  width: auto;
+}
+.input > img {
+  image-orientation: flip;
+  height: 1.2em;
+  margin-right: 0.2em;
+  opacity: 50%;
+  transform: scaleX(-1);
+}
+.inputMain {
+  background-color: black;
+  align-self: flex-start;
+  padding: 0.5em 0;
+  padding-left: 1em;
+  border-radius: 1em;
+  color: white;
+  outline: none;
+  border: none;
+}
+.inputMain::placeholder {
+  color: rgba(255, 255, 255, 0.566);
+  font-family: "Karla", sans-serif;
+}
+.location {
+  opacity: 70%;
+  margin-left: 2em;
+}
+.wheatherMain {
+  width: 95%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cityName {
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+}
+.wheatherForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 2.3em;
+  border-radius: 2em;
+  margin-top: 0.5em;
+  padding: 0 0.5em;
+}
+.logo {
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reallogo {
+  height: 8em;
+}
+.mainTemp {
+  margin-bottom: 0.4em;
+  font-size: 2.5em;
+}
+.temperature {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.otherTemp {
+  display: flex;
+}
+.otherTemp1 {
+  margin-right: 1em;
+}
+.otherTemp2 {
+  margin-left: 1em;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 38%;
+}
+.box {
+  border: none;
+  border-radius: 0.5em;
+  width: 45%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.101);
+  box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.537);
+}
+.logos {
+  width: 2.5em;
+  margin-left: 0.2em;
+}
+.footerLogo {
+  height: 2.2em;
+  width: 2em;
+}
+.footerLogo1 {
+  height: 2.1em;
+  width: 2.5em;
+}
+.footerLogo2 {
+  height: 2em;
+  width: 1.8em;
+}
+.footerLogo3 {
+  width: 1.8em;
+}
+.footerLogo4 {
+  height: 2em;
+  width: 2em;
+}
+.box2,
+.box4 {
+  margin-left: 1em;
+}
+.box1Data {
+  margin-left: 0.2em;
+}
+@media screen and (orientation: portrait) {
+  body {
+    font-size: 0.7em;
+  }
+  .location {
+    font-size: 0.8em;
+  }
+}
+@media screen and (width < 400px) {
+  body {
+    font-size: 0.5em;
+  }
+  .inputMain {
+    width: 8em;
+    height: 1.2em;
+    font-size: 9px;
+  }
+  .inputMain::placeholder {
+    font-size: 6px;
+  }
+}

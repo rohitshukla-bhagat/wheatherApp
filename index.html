@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="video-container">
+        <video autoplay muted loop class="bg-video">
+          <source src="clear.mp4" type="video/mp4" class="bg-link" />
+        </video>
+      </div>
+      <div class="mainContainer">
+        <header class="input">
+          <img src="search1.png" alt="image2" /><input
+            class="inputMain"
+            type="text"
+            placeholder="Search Your City..."
+          />
+          <p class="location latitude">Lat : 464645</p>
+          <p class="location longitude">Long : 64656</p>
+        </header>
+        <main class="wheatherMain">
+          <h1 class="cityName">Balrampur , India</h1>
+          <section class="timeDate">
+            Sunday, July 21 2024 at 03:09:45 AM
+          </section>
+          <p class="wheatherForm">Clouds</p>
+          <section class="logo"></section>
+          <div class="temperature">
+            <h2 class="mainTemp">223<sup>o</sup></h2>
+            <div class="otherTemp">
+              <p class="otherTemp1">Min: 221<sup>o</sup></p>
+              <p class="otherTemp2">Max: 230<sup>o</sup></p>
+            </div>
+          </div>
+        </main>
+        <footer class="boxes">
+          <div class="box box1">
+            <div class="logos logo1">
+              <img
+                src="temperature.png"
+                alt="image1"
+                class="footerLogo footerLogo1"
+              />
+            </div>
+            <div class="box1Data">
+              <p class="box1MainData"><b>Feel Like</b></p>
+              <p class="feel_likes">275<sup>o</sup></p>
+            </div>
+          </div>
+          <div class="box box2">
+            <div class="logos logo2">
+              <img
+                src="humidity.png"
+                alt="image1"
+                class="footerLogo footerLogo2"
+              />
+            </div>
+            <div class="box2Data">
+              <p class="box2MainData"><b>Humidity</b></p>
+              <p class="humidity">89%</p>
+            </div>
+          </div>
+          <div class="box box3">
+            <div class="logos logo3">
+              <img src="wind.png" alt="image1" class="footerLogo footerLogo3" />
+            </div>
+            <div class="box3Data">
+              <p class="box3MainData"><b>Wind</b></p>
+              <p class="wind">3.58 m/s</p>
+            </div>
+          </div>
+          <div class="box box4">
+            <div class="logos logo4">
+              <img
+                src="pressure.png"
+                alt="image1"
+                class="footerLogo footerLogo4"
+              />
+            </div>
+            <div class="box4Data">
+              <p class="box4MainData"><b>Pressure</b></p>
+              <p class="pressure">983 hPa</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
